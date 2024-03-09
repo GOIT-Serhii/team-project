@@ -154,3 +154,45 @@ button {
   min-width: 337px;
   height: 70px;
 }
+/* FEATURES */
+
+.features {
+  background-color: #275F7A;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.features-title {
+  font-size: 36px;
+  line-height: 1.33;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.features-list {
+  display: flex;
+  gap: 53px;
+}
+
+.features-item {
+  width: calc((100% - 2*53px)/3);
+}
+
+.features-img {
+  margin: 0 auto 11px auto;
+}
+
+.features-subtitle {
+  font-size: 22px;
+  line-height: 1.43;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.features-text {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #fff;
+}
