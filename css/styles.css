@@ -250,3 +250,157 @@ button {
   color: #2e363e;
   max-width: 167px;
 }
+
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.56);
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  min-height: 854px;
+  background-color: #fff;
+  padding: 76px 67px 76px 50px;
+  
+
+}
+.modal-close-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background-color: #275f7a;
+  color: #fff;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.modal-text {
+  font-weight: 700;
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    color: #000;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 19px;
+}
+.modal-text::before {
+  content: "";
+   height: 2px;
+    width: 143px;
+background-color: #d8d8d8;
+display: block;
+}
+
+.modal-title {
+  font-weight: 700;
+    font-size: 48px;
+    line-height: 1.255;
+    letter-spacing: 0.03em;
+    color: #022c40;
+    margin-bottom: 31px;
+}
+.modal-title span {
+  color: #000;
+}
+
+.modal-description {
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    color: #022c40;
+    max-width: 531px;
+    margin-bottom: 23px;
+}
+
+.modal-form {}
+
+.modal-label-input {
+  margin-bottom: 23px;
+  display: block;
+}
+
+.modal-input {
+  width: 100%;
+  height: 60px;
+  border: 1px solid #cacaca;
+    border-radius: 5px;
+    background: transparent;
+    padding-left: 21px;
+    outline: transparent;
+    transition: border-color 250ms ease-in-out;
+}
+
+.modal-input:focus {
+  border-color: #275f7a;
+}
+
+
+.modal-input::placeholder {
+  line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    color: #000;
+    
+}
+
+.modal-label-textarea {
+  display: block;
+  margin-bottom: 33px;
+}
+
+.modal-textarea {
+  width: 100%;
+  height: 149px;
+  border: 1px solid #cacaca;
+    border-radius: 5px;
+    outline: transparent;
+    background-color: transparent;
+    transition: border-color 250ms ease-in-out;
+    padding: 22px 21px;
+    resize: none;
+}
+.modal-textarea::placeholder {
+  line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: justify;
+    color: #000;
+}
+
+.modal-textarea:focus {
+  border-color: #275f7a;
+}
+
+.modal-btn {
+  border-radius: 5px;
+    min-width: 181px;
+    height: 48px;
+    background-color: #022c40;
+    letter-spacing: 0.03em;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
+}
