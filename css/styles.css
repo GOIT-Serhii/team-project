@@ -520,3 +520,35 @@ button {
   color: #fff;
   cursor: pointer;
 }
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.item::before {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 14px;
+  background-image: url(../images/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.item:nth-child(1)::before {
+  background-color: #f90;
+}
+
+.item:nth-child(2)::before {
+  background-color: #f03e3d;
+}
+
+.item:nth-child(3)::before {
+  background-color: #4d8dff;
+}
